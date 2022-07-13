@@ -1,0 +1,76 @@
+@import "reset.css";
+
+
+.header{
+    position:absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    .wrapper{
+        width: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
+        .header__wrapper{
+    
+            width: 100%;
+            .header_body{
+                display: flex;
+                align-items: center;
+                padding: 5px 0;
+                min-height: 125px;
+                .header_main{
+                    min-width: 494px;
+                    display: flex;
+                    align-items: center;
+
+                    //flex: 0 0 494/1240 * 100%; scss
+
+                    .header_menu menu{
+                        flex:0 1 420px;
+                    }
+                    .header_logo{
+                        color: black;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 29px;
+                    }
+                
+                }
+                .header__search{
+
+                }
+                .header__actions {
+
+                }
+            
+            }
+
+            
+        }
+    }
+}
+
+.actions-header__item{
+    img{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+    }
+}
+
+
+
+
+
+
+
+.submenu_arrow_span{
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0px 0px 0px 40px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(0, 0, 0);
+  transition: transform 0.3s ease 0s;
+}
